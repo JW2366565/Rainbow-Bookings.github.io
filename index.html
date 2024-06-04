@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Bookings</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <script src="main.js"></script>
+
+      <div class="wrapper">
+        <h2 id="design">Rainbow Bookings</h2>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 9</div>
+    <img src="g_guesthouse.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 9</div>
+    <img src="guesthouse.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 9</div>
+    <img src="g_restuarant.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 9</div>
+    <img src="nw_retaurant.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 9</div>
+    <img src="nw_hd.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 9</div>
+    <img src="kzn_hd.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 9</div>
+    <img src="kzn_restaurant.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 9</div>
+    <img src="ec_guesthouse.png" style="width:50%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 9</div>
+    <img src="mp_hd.jpg" style="width:50%">
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+        <p>Book your favorite destinations now!</p>
+        <!--Select the Province-->
+        <section>
+        <select name="SelectProv" id="prov">
+            <option value="Gauteng"><a href="#gauteng">Gauteng</a></option>
+            <option value="Limpopo"><a href="#limpopo">Limpopo</a></option>
+            <option value="Free State"><a href="#freestate">Free State</a></option>
+            <option value="Mpumalanga"><a href="#mpumalanga">Mpumalanga</a></option>
+            <option value="Western Cape"><a href="#westcape">Western Cape</a></option>
+            <option value="East-Cape"><a href="#eastcape">East-Cape</a></option>
+            <option value="KwaZulu-Natal"><a href="kzn">KwaZulu-Natal</a></option>
+            <option value="Northern Cape"><a href="nc">Northern Cape</a></option>  
+            <option value="North-West"><a href="#nw">North-West</a></option>  
+        </select>
+      </section>
+        </div>
+        <!--Select Province-->
+        <!--Added the Province at the id for better classification-->
+        <!--Updated the  values to match description-->
+        <ul>
+          <div id="gauteng">
+            <a id="gauteng"></a>
+           <li>Gauteng <br>
+            <div class="myDIV">History of Gauteng</div>
+<div class="hide">The Area of Gauteng Province is small; stretching from Pretoria in the North to Vereeniging in the South. 
+  Gauteng in Sotho means: 'for place of gold'. Alternatively the ‘gaut’ could also originate from the Dutch ‘goud’ for gold. 
+  This Province was created by the ANC, in 1994 after the Country’s first democratic election. 
+  It is the smallest Province of South Africa's nine Provinces. However, Gauteng accounts for only 1.5% of the
+   Country's land Area, it is home to more than a quarter of South Africa's population. Of which in 2022, 8.1 Million are women,
+    the most populated Province in South Africa!</div>
+            <label for="guesthouses">Choose a guesthouse:</label>
+            <select name="guesthouse" id="guesthouseGauteng">
+                <option value="Sunrock Guesthouse">Sunrock Guesthouse</option>
+              <option value="Emperors Lodge and Tours">Emperors Lodge and Tours</option>
+              <option value="Kelkiewyn Waterkloof Guesthouse">Kelkiewyn Waterkloof Guesthouse</option>
+              <option value="Peppertree Guest House">Peppertree Guest House</option>
+            </select>
+            <label for="restuarant">Choose a restuarant:</label>
+            <select name="restuarant" id="restuarantGauteng">
+                <option value="Marble Restuarant">Marble Restuarant</option>
+              <option value="Blue Room Hatfield">Blue Room Hatfield</option>
+              <option value="Propeganda Pretoria">Propeganda Pretoria</option>
+              <option value="Mozambik Linksfield">Mozambik Linksfield</option>
+            </select>
+            <label for="holidaydestination">Choose a holiday destination:</label>
+            <select name="holidaydestination" id="holidaydestinationGauteng">
+                <option value="Home Suite Hotels Rosebank">Home Suite Hotels Rosebank</option>
+              <option value="Menlyn Boutique Hotel">Menlyn Boutique Hotel</option>
+              <option value="Nothcliff Boutique Hotel">Nothcliff Boutique Hotel</option>
+              <option value="Askara Haus">Askara Haus</option>
+            </select>
+          </li>
+        </div> <br>
+        <div id="limpopo">
+          <a id="limpopo"></a>
+            <li>Limpopo <br>
+              <div class="myDIV">History of Limpopo</div>
+<div class="hide"><div class="limpopo">Steeped in history, the Limpopo Province celebrates a rich cultural heritage. 
+  The province has many of South Africa's archaeological sites where the mysteries of the past and ancient 
+  peoples are still being unearthed. The present tranquillity of the Limpopo Province belies a turbulent past, 
+  to which many monuments and museums attest.
+
+  The Pedi nation formed their homeland centuries ago in the platinum-rich eastern parts of the current Limpopo Province. 
+  They had to adapt to the harsh landscape that characterised the region. With the arrival of the Voortrekkers circumstances changed 
+  radically for the indigenous tribes and conflicts between them and the Voortrekkers started to occur. The Voortrekkers where European 
+  settlers who left the Cape to start a new life in the unknown wilderness of the hinterland.
+  
+  This invasion of their territory by Europeans led to serious conflict and resulted in many bloody battles. 
+  The history of the Limpopo Province is characterised by numerous incidents of settlement and conflict, of war and peace. 
+  The Anglo-Boer War was one of main causes of the many historical battle fought in the Limpopo Province. In Haenertsberg the 
+  statue of the Long Tom cannon was erected as a memorial to the battles fought on and for this land.
+  
+  Makapansgat Caves and limeworks near Mokopane are an archaeological site of global importance, reflecting the lifestyle and 
+  culture of the first people to discover gold and thrive on the area's bushveld plains. During the Battle of Makapan soldiers 
+  found sanctuary from attackers in a place once used as the home of a Stone Age tribe.</div>
+<div class="hide"></div></div>
+              <label for="guesthouses">Choose a guesthouse:</label>
+            <select name="guesthouse" id="guesthouseLimpopo">
+                <option value="Kom en Rus">Kom en Rus</option>
+              <option value="Langkloof">Langkloof</option>
+              <option value="Vir Altyd">Vir Altyd</option>
+              <option value="Wharthog Corner">Wharthog Corner</option>
+            </select>
+            <label for="restuarant">Choose a restuarant:</label>
+            <select name="restuarant" id="restuarantLimpopo">
+                <option value="Three Bridges Restuarant">Three Bridges Restuarant</option>
+              <option value="Buffalo Gril">Buffalo Gril</option>
+              <option value="Sleepers Restuarant">Sleepers Restuarant</option>
+              <option value="The Hat and Creek">The Hat and Creek</option>
+            </select>
+            <label for="holidaydestination">Choose a holiday destination:</label>
+            <select name="holidaydestination" id="holidaydestinationLimpopo">
+                <option value="Waterberg Game Lodge">Waterberg Game Lodge</option>
+              <option value="Ledend Gholf and Safari  Resort">Ledend Gholf and Safari  Resort</option>
+              <option value="Swadini, A Forever Resort">Swadini, A Forever Resort</option>
+              <option value="Thornybush Game Lodge">Thornybush Game Lodge</option>
+            </select>
+          </div> <br>
+          <div id="freestate">
+            <a id="freestate"></a>
+              <li>Free State <br>
+                <div class="myDIV">History of the Free State</div>
+                <div class="hide">When the Voortrekkers move away from the Cape Colony in the great Trek, some of them 
+                  settled just north of Orange River, which formed the border between the Cape Colony and the rest of South Africa. 
+                  There they founded many towns and farms. But they soon came into conflict with some of the black groups, especially the Basotho. 
+                  The Basotho were a black nation which was found by Moshoeshoe after the mfecane. Their capital was at Thaba Bosui, which means 
+                  Mountain of the Night in Sotho. In 1853 the Boers (as the Voortrekkers who had settled in the new republics were now called) declared 
+                  the area the Orange Free State, a Boer republic like the ZAR.
+
+                  They fight against Moshoeshoe many times, mostly over who owned what land and where the border between the OFS and the Basotho- 
+                  kingdom actually was. During the protracted Second Basotho War of 1864 to 1868, Moshoeshoe asked for British protection to protect his Kingdom. 
+                  The Basotho kingdom became a British protectorate and the Second Basotho War came to an end. As a measure to appease the Boers, the British 
+                  granted most of the Basotho’s fertile land to the Orange Free State creating the current Lesotho borders with the Free State.
+                  
+                  When the Anglo- Boer War broke out in 1899, the Orange Free State helped the ZAR to fight against the British. But in 1902 the
+                   Boers lost the war and their republics became the British colonies. The name of the Orange Free State was changed to the Orange River Colony. 
+                   In 1910, it became one of the provinces of the new Union of South Africa, and the name was changed back to the Orange Free State. 
+                   After South Africa’s transition to democracy the Orange Free State became a South African province and the name was changed to Free State.</div>  
+                <label for="guesthouses">Choose a guesthouse:</label>
+            <select name="guesthouse" id="guesthouseFreeState">
+                <option value="SiBella guest house">SiBella guest house</option>
+              <option value="Aloe guest rooms">Aloe guest rooms</option>
+              <option value="Goedehoop">Goedehoop</option>
+              <option value="The Vaal Guesthouse">The Vaal Guesthouse</option>
+            </select>
+            <label for="restuarant">Choose a restuarant:</label>
+            <select name="restuarant" id="restuarantFreeState">
+                <option value="Balloon">Balloon</option>
+              <option value="Bella Casa Restuarant">Bella Casa Restuarant</option>
+              <option value="Longhorn Bloemfontein">Longhorn Bloemfontein</option>
+              <option value="Famous Brew and Still">Famous Brew and Still</option>
+            </select>
+            <label for="holidaydestination">Choose a holiday destination:</label>
+            <select name="holidaydestination" id="holidaydestinationFreeState">
+                <option value="Kiara Lodge">Kiara Lodge</option>
+              <option value="Casa Cara Resort">Casa Cara Resort</option>
+              <option value="First Group">First Group</option>
+              <option value="Wyndford Holiday Farm">Wyndford Holiday Farm</option>
+            </select>
+          </div> <br>
+          <div id="mpumalanga">
+            <a id="mpumalanga"></a>
+                <li>Mpumalanga <br>
+                  <div class="myDIV">History of Mpumalanga</div>
+<div class="hide">Throughout the Mpumalanga hills and mountains exist hundreds of examples of San (bushman) art. 
+  This art serves as a window  looking into the lives of the San hunters and gatherers who inhabited the area centuries 
+  before the arrival of the Nguni people from the north.</div>
+                  <label for="guesthouses">Choose a guesthouse:</label>
+            <select name="guesthouse" id="guesthouseMpumalanga">
+                <option value="Hakuna Matata Guesthouse">Hakuna Matata Guesthouse</option>
+              <option value="Beauty and the Beast Guesthouse">Beauty and the Beast Guesthouse</option>
+              <option value="That's The Way It Is Guesthouse">That's The Way It Is Guesthouse</option>
+              <option value="True Colors Guesthouse">True Colors Guesthouse</option>
+            </select>
+            <label for="restuarant">Choose a restuarant:</label>
+            <select name="restuarant" id="restuarantMpumalanga">
+                <option value="Flavourful Flare">Flavourful Flare</option>
+              <option value="It's All Coming Back To Me Now">It's All Coming Back To Me Now</option>
+              <option value="Pumpernickel">Pumpernickel</option>
+              <option value="Heito Potato">Heito Potato</option>
+            </select>
+            <label for="holidaydestination">Choose a holiday destination:</label>
+            <select name="holidaydestination" id="holidaydestinationMpumalanga">
+                <option value="Bleeding Love">Bleeding Love</option>
+              <option value="Rainbow Lodge">Rainbow Lodge</option>
+              <option value="Dikhololo">Dikhololo</option>
+              <option value="Buffelspoort">Buffelspoort</option>
+            </select>
+          </div> <br>
+            <div id="westcape">
+                  <li>Western Cape <br>
+                    <div class="myDIV">History of the Western Cape</div>
+<div class="hide">In 1993, the Cape Province was divided into three smaller provinces. One of them is the Western Cape. 
+  The Western Cape was the first place in the country where people from Europe settled. The Europeans brought slaves from Malay 
+  to serve them, and the Malay culture became part of South Africa own heritage. Some of the buildings in Cape Town are more than 300 years old. 
+  In the Cape, as many languages like Dutch, French, German and Malay were spoken, these were mixed to form a new language called Afrikaans that is 
+  unique to South Africa. The word 'Afrikaans' means 'African' in Dutch. Today, Afrikaans is the third most widely spoken home language in South Africa, 
+  after isiZulu and isiXhosa.</div>
+                    <label for="guesthouses">Choose a guesthouse:</label>
+            <select name="guesthouse" id="guesthouseWesternCape">
+                <option value="Rigatoni">Rigatoni</option>
+              <option value="Dave">Dave</option>
+              <option value="Pumpernickel">Pumpernickel</option>
+              <option value="Reeses">Reeses</option>
+            </select>
+            <label for="restuarant">Choose a restuarant:</label>
+            <select name="restuarant" id="restuarantWesternCape">
+                <option value="Timon and Pumbaa">Timon and Pumbaa</option>
+              <option value="The Legit Boss Restaurant">The Legit Boss Restaurant</option>
+              <option value="From This moment Restaurant">From This moment Restaurant</option>
+              <option value="Iwaju Restaurant">Iwaju Restaurant</option>
+            </select>
+            <label for="holidaydestination">Choose a holiday destination:</label>
+            <select name="holidaydestination" id="holidaydestinationWesternCape">
+                <option value="Lovers Lane">Lovers Lane</option>
+              <option value="Foute">Foute</option>
+              <option value="Pumpernickel">Pumpernickel</option>
+              <option value="Vir Altyd">Vir Altyd</option>
+            </select>
+          </div> <br>
+            <div id="eastcape">
+                    <li>Eastern Cape <br>
+                      <div class="myDIV">History of the Eastern Cape</div>
+<div class="hide">The Eastern Cape is often referred to as a world in one province. The second largest of South Africa’s nine provinces, 
+  it offers everything from snow skiing to sunny beaches, game researches to fascinating history. Located on the eastern most part of South Africa, 
+  an area of almost 170,000 square kilometres of diverse landscape is divided into six district municipalities and two metropolitan municipalities. 
+  The provinces seat of government is in Bhisho, Buffalo City Metro. The province has a very strong and distinct culture and heritage, a rich history 
+  from the vibrant and timeless Xhosa traditions.
+
+  The Eastern Cape was one of the first areas settled by the Portuguese in 1488 and by the British in 1820. It was the site of many wars between the 
+  local Khoisan and Xhosa’s as well as the British, Dutch and Germans.</div>
+                      <label for="guesthouses">Choose a guesthouse:</label>
+                      <select name="guesthouse" id="guesthouseEastCape">
+                          <option value="Semi-Soet Guesthouse">Semi-Soet Guesthouse</option>
+                        <option value="Platteland Guesthouse">Platteland Guesthouse</option>
+                        <option value="Strikdas Guesthouse">Strikdas Guesthouse</option>
+                        <option value="Reus Guesthouse">Reus Guesthouse</option>
+                      </select>
+                      <label for="restuarant">Choose a restuarant:</label>
+                      <select name="restuarant" id="restuarantEastCape">
+                          <option value="Palm & Pine.">Palm & Pine.</option>
+                        <option value="Girl and The Lion">Girl and The Lion</option>
+                        <option value="Ska-Rumba">Ska-Rumba</option>
+                        <option value="Dropit Soos n Disprin">Dropit Soos n Disprin</option>
+                      </select>
+                      <label for="holidaydestination">Choose a holiday destination:</label>
+                      <select name="holidaydestination" id="holidaydestinationEastCape">
+                          <option value="Rigatoni">Rigatoni</option>
+                        <option value="Dave">Dave</option>
+                        <option value="Pumpernickel">Pumpernickel</option>
+                        <option value="Reeses">Reeses</option>
+                      </select>
+                    </div> <br>
+                      <div id="kzn">
+                      <li>Kwazulu-Natal <br>
+                        <div class="myDIV">History of Kwazulu-Natal</div>
+<div class="hide"> In 1497 the Portuguese explorer Vasco da Gama, coming from the opposite direction, reached the coast from around the 
+  Cape of Good Hope. He gave the region the name Terra Natalis, because he first saw it on Christmas day (Natal is Portuguese for “Christmas”). 
+  Da Gama probably did not go ashore.
+
+  By the 1500s, the interior of Natal was settled by the Nguni branch of the Bantu-speaking peoples. 
+  They were ancestors of the Zulu and other groups. By the 1800s there were mainly Zulu living in Natal north 
+  of the Tugela River. Under the successive leadership of the chieftains Dingiswayo, Shaka, and Dingane, the Zulu built up an empire.
+  
+  Meanwhile, starting in 1824, British traders founded Port Natal (now Durban) on the coast. Another group of Europeans,
+   the Boers, arrived in Natal from the west during their Great Trek away from Great Britain’s Cape Colony. The Boers fought 
+   several battles with the Zulu and finally defeated Dingane at the Battle of Blood River (or Ncome River) in 1838. The Boers founded 
+   the Republic of Natal, but the British annexed it in 1843. Most of the Boers left, and immigrants came from Britain to take their place.</div>
+                        <label for="guesthouses">Choose a guesthouse:</label>
+                        <select name="guesthouse" id="guesthouseKwazuluNatal">
+                            <option value="Side To Side">Side To Side</option>
+                          <option value="Break Free">Break Free</option>
+                          <option value="Bang Bang">Bang Bang</option>
+                          <option value="A New Day Has Come">A New Day Has Come</option>
+                        </select>
+                        <label for="restuarant">Choose a restuarant:</label>
+                        <select name="restuarant" id="restuarantKwazuluNatal">
+                            <option value="Sticky and Cruel">Sticky and Cruel</option>
+                          <option value="Dave">Dove</option>
+                          <option value="Pichana">Pichana</option>
+                          <option value="NorthSea">NorthSea</option>
+                        </select>
+                        <label for="holidaydestination">Choose a holiday destination:</label>
+                        <select name="holidaydestination" id="holidaydestinationKwazuluNatal">
+                            <option value="I'm Alive">I'm Alive</option>
+                          <option value="Once Upon A Time">Once Upon A Time</option>
+                          <option value="Periwinckle">Periwinckle</option>
+                          <option value="My Heart Will Go On">My Heart Will Go On</option>
+                        </select>
+                      </div> <br>
+                        <div id="nc">
+                        <li>Northen Cape <br>
+                          <div class="myDIV">History of the Northen Cape</div>
+<div class="hide">Beginning about 1650, Europeans settled in southern Africa. Some of the first were the Dutch settlers whose 
+  descendants became known as Boers. A major event in the history of the Northern Cape occurred in 1867, when diamonds were discovered 
+  in Griqualand West—an area near the confluence of the Orange and Vaal rivers, in the eastern part of the present Northern Cape province. 
+  The Griquas were a group of people of mixed white and Khoekhoe ancestry who had settled in the area in the late 1700s after being mistreated 
+  in Cape Town. Soon the British, the Boers, and the Griquas all tried to claim the region for their own. The British took over the region in October 1871 
+  and made it part of their Cape Colony.  The Northern Cape played an important role in the South African War (1899–1902), 
+  also called the Boer War or Second Boer War. One of the biggest battles was on December 11, 1899, at Magersfontein. 
+  The Boers won that battle with new fighting techniques; they used trenches so that the enemy could not see them. The British won the
+   war, however, and took over all of the Boer territories. When the Union of South Africa was formed in 1910, the Cape Colony became the Cape 
+   Province. In 1994, when South Africa’s apartheid-era government ended, the four historic provinces of South Africa were reorganized into nine new provinces.
+    The Northern Cape was formed from part of the Cape Province.</div>
+                          <label for="guesthouses">Choose a guesthouse:</label>
+            <select name="guesthouse" id="guesthouseNorthenCape">
+                <option value="Proud Mary">Proud Mary</option>
+              <option value="I Wil Always Love You">I Wil Always Love You</option>
+              <option value="Nickel">Nickel</option>
+              <option value="When You Believe">When You Believe</option>
+            </select>
+            <label for="restuarant">Choose a restuarant:</label>
+            <select name="restuarant" id="restuarantNorthenCape">
+                <option value="Drivers Lisence">Drivers Lisence</option>
+              <option value="The Climb">The Climb</option>
+              <option value="Flowers">Flowers</option>
+              <option value="Poker Face">Poker Face</option>
+            </select>
+            <label for="holidaydestination">Choose a holiday destination:</label>
+            <select name="holidaydestination" id="holidaydestinationNorthenCape">
+                <option value="Rigatoni">Rigatoni</option>
+              <option value="Dave">Dave</option>
+              <option value="Pumpernickel">Pumpernickel</option>
+              <option value="Reeses">Reeses</option>
+            </select>
+          </div> <br>
+          <div id="nw">
+                          <li>North-West <br>
+                            <div class="myDIV">History of North-West</div>
+<div class="hide">It was in the North West Province, in 1838, where General Potgieter settled after he defeated the armies of Mzilikazi 
+  at Kapain and Mosega. He was assisted in this effort by the Griqua and the Barolong, a terrorised tribe.
+
+  Some of ancestors of these people still live in North West. Potgieter later left the area but not before founding the oldest town, 
+  north of the Vaal River, in South Africa, namely Potchefstroom.  Mahikeng was in the main stream of South African history again during the early years 
+  of the Anglo-Boer War when the Boer forces besieged the town for 217 days, from 1899 until May 1900; during which time Sol Plaatje wrote his literary 
+  masterpiece "The Boer War Diary of Sol T Plaatje: an African at Mafikeng".
+
+  Plaatje was later to become one of the founding fathers of the South African Native National Congress, 
+  the forerunner of the African National Congress, in 1912.
+  
+  The first phase of the Anglo-Boer War lasted less than a year and was followed by two years of guerilla warfare. 
+  During that phase more engagements took place in the then Western Transvaal than in any other part of the country.
+  
+  Apart from the famous siege of Mafikeng, no less than 20 significant engagements took place during the 20 months 
+  between 7 August 1900 and 11 April 1902. These battles were spread evenly across the old Western Transvaal, now the Eastern half of the North West Province.</div>
+                            <label for="guesthouses">Choose a guesthouse:</label>
+                            <select name="guesthouse" id="guesthouseNorthWest">
+                                <option value="Coat Of Many Colors">Coat Of Many Colors</option>
+                              <option value="Mis Eet Slaap Herhaal">Mis Eet Slaap Herhaal</option>
+                              <option value="Lelie">Lelie</option>
+                              <option value="Reeses">Reeses</option>
+                            </select>
+                            <label for="restuarant">Choose a restuarant:</label>
+                            <select name="restuarant" id="restuarantNorthWest">
+                                <option value="Net Een Keer">Net Een Keer</option>
+                              <option value="Duifie">Duifie</option>
+                              <option value="Pumpernickel">Pumpernickel</option>
+                              <option value="Vulkaan">Vulkaan</option>
+                            </select>
+                            <label for="holidaydestination">Choose a holiday destination:</label>
+                            <select name="holidaydestination" id="holidaydestinationNorthWest">
+                                <option value="Mag Ek Jou Laaste Wees">Mag Ek Jou Laaste Wees</option>
+                              <option value="Dave">Dave</option>
+                              <option value="Pumpernickel">Pumpernickel</option>
+                              <option value="Reeses">Reeses</option>
+                            </select>
+                          </div> <br>
+        </ul>
+      </div>
+
+      <div id="calender">
+     
+
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+        </div>  
+        </div>    
+    
+            <div class="row">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" >
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" >
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" >
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" >
+    
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" >
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" >
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" >
+    
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" >
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" >
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="Continue to checkout" class="btn" onclick="Main()">
+          </form>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-*-*"></div>
+          <div class="col-*-*"></div>
+        </div>
+        <div class="row">
+          <div class="col-*-*"></div>
+          <div class="col-*-*"></div>
+          <div class="col-*-*"></div>
+        </div>
+        <div class="row">
+          ...
+        </div>
+      </div>
+
+      
